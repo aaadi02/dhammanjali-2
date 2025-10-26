@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import BusinessCards from "./BusinessCards";
-import loyaltyImg from "../../../public/images/homeImg.jpeg"; // Ensure this path is correct
 
 // Framer Motion Variants
 const cardVariants = {
@@ -22,7 +21,7 @@ function About() {
     title: "OUR VALUE-CREATION APPROACH",
     description:
       "At DHAMMANJALI FOUNDATION, we believe in creating lasting value not just through our products but through meaningful contributions to the communities we serve. Our approach focuses on empowering communities and enriching lives by delivering high-quality products, fostering sustainable practices, and supporting social initiatives that positively impact the society. Our approach is centered around integrity, accountability, and a strong sense of responsibility towards our customers, partners, communities. We achieve this by aligning our goals with our six core values, which guide our actions and decisions every day.",
-    image: loyaltyImg,
+    image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761454378/bannerAboutUs_vnftgd.jpg",
     stats: "1,000 +",
     statsDescription:
       "Happy customers served annually\nTrusted by families across the region.",
@@ -37,9 +36,9 @@ function About() {
     "We aim to conduct our businesses ethically and in a manner that is respectful to all individuals, communities, and the environment. Our commitment goes beyond compliance—we believe in doing the right thing, even when no one is watching. We achieve this by aligning our goals with our six core values, which serve as the foundation of every decision, interaction, and initiative we undertake.";
 
   const values = [
-    { title: "Excellence", image: "#" },
-    { title: "Customer Value", image: "#" },
-    { title: "Owner Mindset", image: "#" },
+    { title: "Excellence", image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761454751/w0mpttxxva9xygcowctu_ain3qu.jpg" },
+    { title: "Customer Value", image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761454750/ns27nvpzvpbzrined1in_n6cst4.jpg" },
+    { title: "Owner Mindset", image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761454749/dlcc3ac6sdr83rpopctg_lt1mto.jpg" },
   ];
 
   const handleCardClick = (index) => {

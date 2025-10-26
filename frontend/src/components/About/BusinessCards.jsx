@@ -5,32 +5,32 @@ const BusinessCards = () => {
     {
       id: 1,
       title: "Mart",
-      image: "#",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761453246/m-mart_lfbgh6.jpg",
     },
     {
       id: 2,
       title: "Real estate",
-      image: "#",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761453093/dholera-3_iqqrc0.jpg",
     },
     {
       id: 3,
       title: "Medical Devices",
-      image: "#",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761453407/water-ionizer_lq8la6.jpg",
     },
     {
       id: 4,
       title: "Cafe",
-      image: "#",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761453542/320x320_square_f7e279db7f23326de892cdd1e370bbcf_jnuqrk.jpg",
     },
     {
       id: 5,
       title: "Dhammanjali Foundation",
-      image: "#",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761453776/s5ylgoz5015nrhtmbnc1_cmpiig.jpg",
     },
     {
       id: 6,
       title: "Charity",
-      image: "#",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761454016/charity_ecf6fa.avif",
     },
   ];
 

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import AnnouncementCards from "./AnnouncementCards";
 
 const Homepage = () => {
-  const imageUrl = "/images/homeImg.jpeg"; // served from public/
+  const imageUrl = "https://res.cloudinary.com/dwudu5pep/image/upload/v1761452862/WhatsApp_Image_2025-10-06_at_6.11.24_PM_puuxkm.jpg";
 
   // Corporate section state
   const [activeTab, setActiveTab] = useState("SUSTAINABILITY");
