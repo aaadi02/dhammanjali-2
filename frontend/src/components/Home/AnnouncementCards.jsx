@@ -6,7 +6,7 @@ const AnnouncementCards = () => {
   const cardsData = [
     {
       id: 1,
-      image: "../../../public/images/m-mart1.jpeg",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761450792/OIP_zcuvr6.jpg",
       title: "M-Mart",
       route: "/retail",
       description: "A NEW ERA OF SHOPPING MART & MALL.",
@@ -14,7 +14,7 @@ const AnnouncementCards = () => {
     },
     {
       id: 2,
-      image: "../../../public/images/cafevilla.jpg",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761450759/almirall-office-cafeteria-barcelona-2_mc2q0o.jpg",
       title: "CAFE VILLA",
       route: "/food",
       description: "RISHTO KI MITHAS, CAFE VILLA KE SATH.",
@@ -22,7 +22,7 @@ const AnnouncementCards = () => {
     },
     {
       id: 3,
-      image: "../../../public/images/water-filter.webp",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761450887/hybrid_with_glass_backsplash-v2-1280x853_vupqoi.webp",
       title: "DHAMMANJALI HIMALAYAN WATER IONIZER",
       route: "/health",
       description: "A MEDICAL GRADE DEVICE ISO 13485 CERTIFIED.",
@@ -30,7 +30,7 @@ const AnnouncementCards = () => {
     },
     {
       id: 4,
-      image: "../../../public/images/garden.jpg",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761450888/IMG-20230704-WA0011_npuywy.jpg",
       title: "SANATAN VALLEY",
       route: "/realestate",
       description:
@@ -39,7 +39,7 @@ const AnnouncementCards = () => {
     },
     {
       id: 5,
-      image: "../../../public/images/crops.jpg",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761450889/IMG-20230926-WA0013_zwua4j.jpg",
       title: "Agriculture Fields",
       route: "/agriculture",
       date: "15 MAR 2025",
@@ -49,7 +49,7 @@ const AnnouncementCards = () => {
     },
     {
       id: 6,
-      image: "../../../public/images/house.jpg",
+      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761450963/superior1_wgs9m8.jpg",
       title: "Hotels & Resort",
       route: "/hospitality",
       description:
