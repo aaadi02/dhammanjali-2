@@ -44,13 +44,15 @@ const Navbar = () => {
         {/* Logo + Hamburger */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <Link to="/" onClick={scrollToTop}>
-            <div className="flex flex-col text-[12px] font-light gap-0.5 text-orange-500 hover:scale-105 transition-transform duration-500 ease-in-out">
+            <div className="flex flex-col text-[10px] font-light gap-0.5 text-orange-500 hover:scale-105 transition-transform duration-500 ease-in-out">
               <img
                 src={logoimage}
                 alt="Logo"
-                className="h-16 w-auto transition-all duration-500 hover:rotate-3"
+                className="h-12 w-auto drop-shadow-lg transition-all duration-500 hover:rotate-3"
               />
-              <span className="tracking-widest">Dhammanjali Group</span>
+              <span className="tracking-widest animate-pulse">
+                Dhammanjali Group
+              </span>
             </div>
           </Link>
 

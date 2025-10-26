@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import AnnouncementCards from "./AnnouncementCards";
 
 const Homepage = () => {
@@ -111,7 +112,7 @@ const Homepage = () => {
             <div className="order-2 lg:order-1">
               <div className="relative">
                 <img
-                  src="../../../../public/images/flowHomeImg.jpg"
+                  src="https://res.cloudinary.com/dwudu5pep/image/upload/v1761450416/DHAMMANJALI_GROUP_ez07yj.jpg"
                   alt="workflow"
                   className="w-full h-80 lg:h-96 rounded-3xl object-cover"
                 />
@@ -136,9 +137,11 @@ const Homepage = () => {
                 </p>
               </div>
               <div className="mt-8">
-                <button className="bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-200 shadow-lg hover:shadow-xl">
-                  READ MORE
-                </button>
+                <Link to="/gallery" className="inline-block">
+                  <button className="bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-200 shadow-lg hover:shadow-xl">
+                    READ MORE
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -163,14 +166,19 @@ const Homepage = () => {
                     entrepreneurs, the group not only fuels financial
                     independence but also contributes to national progress.
                   </p>
-                  <button className="w-full sm:w-auto bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 px-6 sm:px-8 rounded-full transition-colors duration-200 shadow-lg hover:shadow-xl">
-                    READ MORE
-                  </button>
+                  <Link
+                    to="/agriculture"
+                    className="w-full sm:w-auto inline-block"
+                  >
+                    <button className="w-full sm:w-auto bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 px-6 sm:px-8 rounded-full transition-colors duration-200 shadow-lg hover:shadow-xl">
+                      READ MORE
+                    </button>
+                  </Link>
                 </div>
 
                 <div className="order-2 lg:order-2">
                   <img
-                    src="../../../../public/images/homeImg3.jpg"
+                    src="https://res.cloudinary.com/dwudu5pep/image/upload/v1761450513/IMG-20210926-WA0037_s5fnnv.jpg"
                     alt="DHAMMANJALI Group"
                     className="w-full h-64 sm:h-72 md:h-80 lg:h-96 rounded-2xl md:rounded-3xl object-cover"
                   />
@@ -219,7 +227,7 @@ const Homepage = () => {
           {/* Image */}
           <div className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-md lg:max-h-[50em] md:right-[-8rem] md:bottom-[-2rem] md:relative aspect-square overflow-hidden -mt-10">
             <img
-              src="../../../../public/images/homeImg4.png"
+              src="https://res.cloudinary.com/dwudu5pep/image/upload/v1761450732/homeImg4_1_thpakm.png"
               alt="Corporate Sustainability"
               className="w-full h-full object-cover rounded-[20%_40%_20%_40%] shadow-lg"
             />
@@ -417,13 +425,11 @@ const Homepage = () => {
                 improve the quality of life for those around you. Our mission is
                 to foster self-reliance and community development.
               </p>
-              <button className="mt-2 md:mt-4 bg-[#2C2C54] hover:bg-[#1a1a3a] text-white font-semibold py-3 px-6 md:px-8 rounded-full transition-colors duration-200 shadow-lg hover:shadow-xl">
-                LEARN MORE
-              </button>
+              
             </div>
             <div className="flex-1 flex items-center justify-center mt-4 md:mt-6 md:ml-6 font-montserrat px-4 md:px-0 max-w-full lg:mt-1">
               <img
-                src="../../../../public/images/homeImg5.jpg"
+                src="https://res.cloudinary.com/dwudu5pep/image/upload/v1761450500/c7bxt9cfe0ztmiloku3s_xd2mi1.jpg"
                 alt="DHAMMANJALI GROUP Announcement"
                 className=" max-w-[300px] sm:max-w-[400px] md:w-[500px] lg:min-w-[600px] h-[200px] sm:h-[250px] md:h-[450px] rounded-[4px] object-cover shadow-lg font-montserrat"
               />
@@ -437,7 +443,7 @@ const Homepage = () => {
       {/* Key Highlights AGM Section */}
       <section
         className="my-4 md:my-5 py-12 md:py-16 bg-cover bg-center bg-no-repeat text-white text-center rounded-3xl md:rounded-[150px] mx-2 sm:mx-4 md:mx-12 relative mb-15 lg:-mt-10"
-        style={{ backgroundImage: `url(../../../public/images/homeImg6.jpg)` }}
+        style={{ backgroundImage: `url(https://res.cloudinary.com/dwudu5pep/image/upload/v1761451174/20240821_181618_csmxwz.jpg)` }}
       >
         <div className="absolute inset-0 rounded-3xl md:rounded-[150px] bg-black/30 z-0"></div>
         <div className="max-w-[1500px] mx-auto px-4 sm:px-6 relative z-10">
@@ -523,7 +529,7 @@ const Homepage = () => {
             <div className="flex justify-center order-1 md:order-2">
               <div className="w-[250px] h-[180px] sm:w-[300px] sm:h-[200px] md:w-[400px] md:h-[280px] lg:w-[500px] lg:h-[300px] rounded-lg md:rounded-full overflow-hidden border-4 border-white/30 shadow-lg">
                 <img
-                  src="../../../../public/images/logoimage2.png"
+                  src="https://res.cloudinary.com/dwudu5pep/image/upload/v1761450990/jsypabsnssw2a9np4hxv_egxrry.png"
                   alt="Life at Dhammanjali"
                   className="w-full h-full object-cover"
                   onError={(e) => {

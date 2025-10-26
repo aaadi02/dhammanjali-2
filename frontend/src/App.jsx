@@ -12,11 +12,13 @@ import Medical from "./components/Medical/Medical";
 import RealEstate from "./components/RealEstate/RealEstate";
 import Agriculture from "./components/Agriculture/Agriculture";
 import Hospitality from "./components/Hospatility/Hospitality";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />

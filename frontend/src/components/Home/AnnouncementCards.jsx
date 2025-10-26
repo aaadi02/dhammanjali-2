@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AnnouncementCards = () => {
   // Cards data
@@ -7,6 +8,7 @@ const AnnouncementCards = () => {
       id: 1,
       image: "../../../public/images/m-mart1.jpeg",
       title: "M-Mart",
+      route: "/retail",
       description: "A NEW ERA OF SHOPPING MART & MALL.",
       alt: "M-Mart",
     },
@@ -14,38 +16,44 @@ const AnnouncementCards = () => {
       id: 2,
       image: "../../../public/images/cafevilla.jpg",
       title: "CAFE VILLA",
-      description:
-        "RISHTO KI MITHAS, CAFE VILLA KE SATH.",
+      route: "/food",
+      description: "RISHTO KI MITHAS, CAFE VILLA KE SATH.",
       alt: "Cafe Villa",
     },
     {
       id: 3,
       image: "../../../public/images/water-filter.webp",
       title: "DHAMMANJALI HIMALAYAN WATER IONIZER",
-      description:
-        "A MEDICAL GRADE DEVICE ISO 13485 CERTIFIED.",
+      route: "/health",
+      description: "A MEDICAL GRADE DEVICE ISO 13485 CERTIFIED.",
       alt: "Water Filter",
     },
     {
       id: 4,
       image: "../../../public/images/garden.jpg",
       title: "SANATAN VALLEY",
-      description: "WORLD 1ST, ULTRA LUXURIOUS SANATAN VALLEY AGRO FARMHOUSE & RESORT PROJECT.",
+      route: "/realestate",
+      description:
+        "WORLD 1ST, ULTRA LUXURIOUS SANATAN VALLEY AGRO FARMHOUSE & RESORT PROJECT.",
       alt: "SANATAN VALLEY",
     },
     {
-      id: 4,
+      id: 5,
       image: "../../../public/images/crops.jpg",
       title: "Agriculture Fields",
+      route: "/agriculture",
       date: "15 MAR 2025",
-      description: "Empowering farmers with cutting-edge technology and sustainable solutions for a greener tomorrow.",
+      description:
+        "Empowering farmers with cutting-edge technology and sustainable solutions for a greener tomorrow.",
       alt: "Agriculture Fields",
     },
     {
-      id: 4,
+      id: 6,
       image: "../../../public/images/house.jpg",
       title: "Hotels & Resort",
-      description: "We believe hospitality is more than service — it’s about creating warm, memorable experiences that make you feel truly welcome and at home.",
+      route: "/hospitality",
+      description:
+        "We believe hospitality is more than service — it’s about creating warm, memorable experiences that make you feel truly welcome and at home.",
       alt: "Hotels & Resort",
     },
   ];
@@ -94,15 +102,17 @@ const AnnouncementCards = () => {
           >
             {card.description}
           </p>
-          <button
-            className={`${
-              isMobile ? "mt-3" : "mt-4"
-            } bg-[#2C2C54] hover:bg-[#1a1a3a] text-white font-semibold py-2 ${
-              isMobile ? "px-4" : "px-6"
-            } rounded-full transition-colors duration-200 text-sm`}
-          >
-            READ MORE
-          </button>
+          <Link to={card.route || "/"} className="block text-center">
+            <button
+              className={`${
+                isMobile ? "mt-3" : "mt-4"
+              } bg-[#2C2C54] hover:bg-[#1a1a3a] text-white font-semibold py-2 ${
+                isMobile ? "px-4" : "px-6"
+              } rounded-full transition-colors duration-200 text-sm`}
+            >
+              READ MORE
+            </button>
+          </Link>
         </div>
       </div>
     );
