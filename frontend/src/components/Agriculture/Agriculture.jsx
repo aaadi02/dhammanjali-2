@@ -103,7 +103,7 @@ const staticData = {
   hero: {
     title: "SMART AGRICULTURE",
     mainImage:
-      "https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553959/agricultureLand_wzblos.avif",
   },
   details: {
     title: "AGRICULTURE",
@@ -405,7 +405,7 @@ const Agriculture = () => {
       </motion.section>
 
       {/* Optimized Back to Top Button */}
-      <button
+      {/* <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="fixed bottom-6 md:bottom-8 right-6 md:right-8 z-50 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white p-3 md:p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300"
         aria-label="Back to top"
@@ -423,7 +423,7 @@ const Agriculture = () => {
         >
           <path d="M18 15l-6-6-6 6" />
         </svg>
-      </button>
+      </button> */}
     </div>
   );
 };

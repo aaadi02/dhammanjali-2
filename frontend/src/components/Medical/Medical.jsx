@@ -57,7 +57,7 @@ const staticData = {
   hero: {
     title: "MEDICAL GRADE DEVICES",
     imageUrl:
-      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761551821/medical-banner-with-doctor-holding-tablet_rwv2tj.jpg",
   },
   intro: {
     title: "DHAMMANJALI",
@@ -71,7 +71,7 @@ const staticData = {
     description:
       "Cutting edge medical devices designed to improve patient outcomes and streamline clinical workflows",
     imageUrl:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761552042/x2zld1rs6pvpg6nhyw5w_fdt4am.png",
   },
   devices: {
     title: "OUR MEDICAL DEVICES",
@@ -80,7 +80,7 @@ const staticData = {
     deviceDescription: "Neurological monitoring device for critical care",
     deviceFeatures: ["ECG/EMG", "Real-time analytics", "Cloud storage"],
     imageUrl:
-      "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761552072/medical1_x3ozmf.png",
   },
   features: [
     {
@@ -167,7 +167,7 @@ function Medical() {
       </header>
 
       {/* Intro Section */}
-      <section className="mx-4 md:mx-20 my-5">
+      <section className="mx-4 md:mx-20 my-5 lg:my-15">
         <AnnouncementsTitle
           title={intro.title}
           subtitle={
@@ -188,7 +188,7 @@ function Medical() {
           <img
             src={tech.imageUrl}
             alt="Medical Device"
-            className="w-full h-auto object-cover rounded-[40%_20%_40%_20%] shadow-lg"
+            className="w-full lg:h-[450px] object-cover rounded-[40%_20%_40%_20%] shadow-lg"
           />
         </div>
         <div className="text-center align-center">
@@ -216,7 +216,14 @@ function Medical() {
 
       {/* Devices Section */}
       <section className="flex flex-col md:flex-row items-center justify-between mx-auto px-4 sm:px-6 py-8 gap-10 max-w-6xl">
-        <div className="flex-1 text-center">
+        <div className="medical-devices-img w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center md:order-last">
+          <img
+            src={devices.imageUrl}
+            alt="Medical Device 2"
+            className="w-full lg:h-[450px] object-cover rounded-[40%_20%_40%_20%] shadow-lg"
+          />
+        </div>
+        <div className="flex-1 text-center md:order-first">
           <h3 className="text-3xl md:text-4xl font-bold mb-2 text-center">
             {devices.title}
           </h3>
@@ -240,13 +247,6 @@ function Medical() {
               ))}
             </div>
           </div>
-        </div>
-        <div className="medical-devices-img w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center">
-          <img
-            src={devices.imageUrl}
-            alt="Medical Device 2"
-            className="w-full h-auto object-cover rounded-[40%_20%_40%_20%] shadow-lg"
-          />
         </div>
       </section>
 

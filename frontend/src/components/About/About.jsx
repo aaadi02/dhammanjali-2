@@ -20,7 +20,7 @@ function About() {
   const [valueCreationData, setValueCreationData] = useState({
     title: "OUR VALUE-CREATION APPROACH",
     description:
-      "At DHAMMANJALI FOUNDATION, we believe in creating lasting value not just through our products but through meaningful contributions to the communities we serve. Our approach focuses on empowering communities and enriching lives by delivering high-quality products, fostering sustainable practices, and supporting social initiatives that positively impact the society. Our approach is centered around integrity, accountability, and a strong sense of responsibility towards our customers, partners, communities. We achieve this by aligning our goals with our six core values, which guide our actions and decisions every day.",
+      "At DHAMMANJALI GROUP, we believe in creating lasting value not just through our products but through meaningful contributions to the communities we serve. Our approach focuses on empowering communities and enriching lives by delivering high-quality products, fostering sustainable practices, and supporting social initiatives that positively impact the society. Our approach is centered around integrity, accountability, and a strong sense of responsibility towards our customers, partners, communities. We achieve this by aligning our goals with our six core values, which guide our actions and decisions every day.",
     image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761454378/bannerAboutUs_vnftgd.jpg",
     stats: "1,000 +",
     statsDescription:
@@ -33,7 +33,7 @@ function About() {
   // Values Section Data
   const [selectedIndex, setSelectedIndex] = useState(1);
   const description =
-    "We aim to conduct our businesses ethically and in a manner that is respectful to all individuals, communities, and the environment. Our commitment goes beyond compliance—we believe in doing the right thing, even when no one is watching. We achieve this by aligning our goals with our six core values, which serve as the foundation of every decision, interaction, and initiative we undertake.";
+    "We aim to conduct our businesses ethically and in a manner that is respectful to all individuals, communities, and the environment. Our commitment goes beyond compliance—we believe in doing the right thing, even when no one is watching. We achieve this by aligning our goals with our six core values, which serve as the group of every decision, interaction, and initiative we undertake.";
 
   const values = [
     { title: "Excellence", image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761454751/w0mpttxxva9xygcowctu_ain3qu.jpg" },
@@ -309,7 +309,7 @@ function About() {
             {/* Right - Description */}
             <div className="order-2 lg:order-2">
               <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
-                At DHAMMANJALI FOUNDATION, we believe in creating sustainable
+                At DHAMMANJALI GROUP, we believe in creating sustainable
                 value through innovative approaches and community-focused
                 initiatives. Our commitment to excellence drives us to deliver
                 exceptional results that benefit all stakeholders and

@@ -9,42 +9,41 @@ import {
 // You'll need to add these images to your assets folder
 // For now, I'm using placeholder paths - update these with your actual image paths
 const headerBg =
-  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80";
-// import headerBg from "../../assets/image/mart/mart-header2.jpg";
+  "https://res.cloudinary.com/dwudu5pep/image/upload/v1761544887/martBanner_cnlh3s.webp";
 
 // Client types data
 const clientTypes = [
   {
     image:
-      "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80", // retail placeholder
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761546094/icon1_mr3weg.jpg", // retail placeholder
     title: "Retail Grocers",
     description:
       "Empowering Small To Medium-Sized Stores With Reliable, Diverse Product Solutions.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80", // wholesaler placeholder
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761546095/icon2_gd8xpv.jpg", // wholesaler placeholder
     title: "Wholesalers",
     description:
       "Competitive Pricing And Extensive Product Range For Maximum Market Advantage.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80", // restaurant placeholder
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761546095/icon3_i2ysjo.jpg", // restaurant placeholder
     title: "Restaurants & Caterers",
     description:
       "Premium Quality Ingredients To Elevate Your Culinary Creations.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80", // corporate placeholder
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761546095/icon4_qj9y9e.jpg", // corporate placeholder
     title: "Corporate Clients",
     description:
       "Tailored Solutions For Cafeterias And Events That Impress Stakeholders.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80", // consumer placeholder
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761546095/icon5_j1fxgn.jpg", // consumer placeholder
     title: "Individual Consumers",
     description:
       "Access To Trending And Diverse Products That Enhance Your Lifestyle.",
@@ -55,17 +54,17 @@ const clientTypes = [
 const uspData = [
   {
     image:
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761548843/circle1_cyxrkt.jpg",
     title: "Wide Product Range",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761548842/circle3_yoqjmr.jpg",
     title: "Diverse Customer Base",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761548843/circle2_tafgld.jpg",
     title: "Commitment To Quality",
   },
 ];
@@ -152,24 +151,27 @@ const MartDynamic = () => {
   const sampleItems = [
     {
       id: 1,
-      title: "Fresh Vegetables",
-      description: "Farm-fresh organic vegetables",
+      title: "Kids clothing",
+      description:
+        "Colorful, comfy, and stylish! Discover adorable outfits for every age — from playful everyday wear to special occasion looks.",
       imageUrl:
-        "https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761545243/bzzpyproyrqkokqhxsna_uav3kr.jpg",
     },
     {
       id: 2,
-      title: "Dairy Products",
-      description: "Pure and healthy dairy products",
+      title: "Grocery & Staples",
+      description:
+        "Your daily essentials, all in one place. From fresh grains and pulses to oils, flours, and spices — quality and freshness you can count on.",
       imageUrl:
-        "https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761545244/q5uvldsejuo8hk1vbvaf_z8qxjx.png",
     },
     {
       id: 3,
-      title: "Bakery Items",
-      description: "Fresh baked goods daily",
+      title: "Fruits & Vegetables",
+      description:
+        "Farm-fresh fruits and crisp vegetables, handpicked daily for peak freshness and taste.",
       imageUrl:
-        "https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761545244/eljuawvomd94mhy8huuo_rkogbr.png",
     },
   ];
 
@@ -231,7 +233,7 @@ const USPs = () => {
 
   return (
     <section className="bg-[#4a90a4] py-16 px-4 text-center font-montserrat overflow-x-hidden">
-      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-16 tracking-wide text-center">
+      <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 lg:mb-25 mb-10 tracking-wide text-center">
         OUR UNIQUE SELLING POINTS
       </h2>
 
@@ -272,23 +274,46 @@ const USPs = () => {
 // FeatureCards Component
 const FeatureCards = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-4 p-8 bg-white">
-      {features.map((item, index) => (
-        <div
-          key={index}
-          className="bg-amber-50 p-8 text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] min-w-[200px] max-w-[320px] shadow-sm transition-transform duration-300 hover:-translate-y-1 rounded-xl"
-        >
-          <div className="w-16 h-16 border-4 border-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center bg-amber-50">
-            {item.icon}
+    <div className="p-8 bg-white">
+      {/* Desktop View */}
+      <div className="hidden md:flex flex-wrap justify-center gap-4">
+        {features.map((item, index) => (
+          <div
+            key={index}
+            className="bg-amber-50 p-8 text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] min-w-[200px] max-w-[320px] shadow-sm transition-transform duration-300 hover:-translate-y-1 rounded-xl"
+          >
+            <div className="w-16 h-16 border-4 border-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center bg-amber-50">
+              {item.icon}
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              {item.title}
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed max-w-[220px] mx-auto">
+              {item.description}
+            </p>
           </div>
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">
-            {item.title}
-          </h3>
-          <p className="text-sm text-gray-600 leading-relaxed max-w-[220px] mx-auto">
-            {item.description}
-          </p>
-        </div>
-      ))}
+        ))}
+      </div>
+
+      {/* Mobile View - Carousel */}
+      <div className="md:hidden flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-4 scrollbar-hide">
+        {features.map((item, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-80 snap-center bg-amber-50 p-8 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1 rounded-xl"
+          >
+            <div className="w-16 h-16 border-4 border-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center bg-amber-50">
+              {item.icon}
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              {item.title}
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed max-w-[220px] mx-auto">
+              {item.description}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
@@ -297,9 +322,20 @@ const FeatureCards = () => {
 function Mmart() {
   return (
     <div className="text-gray-800 pt-16 md:pt-20 font-montserrat">
+      <style>
+        {`
+          .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+          .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+          }
+        `}
+      </style>
       {/* Header Section */}
       <div
-        className="bg-cover bg-center h-80 relative flex items-center justify-center"
+        className="bg-cover bg-center h-80 lg:h-80 relative flex items-center justify-center"
         style={{ backgroundImage: `url(${headerBg})` }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
@@ -331,9 +367,10 @@ function Mmart() {
           <span>Your Premier Partner in Quality Grocery Solutions</span>
         </div>
 
-        <div className="flex flex-col gap-16 items-center">
+        {/* Desktop View */}
+        <div className="hidden md:flex flex-col gap-16 items-center">
           {/* Row 1 */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+          <div className="flex flex-wrap justify-center gap-8 md:gap-16 lg:gap-5">
             {clientTypes.slice(0, 3).map((client, index) => (
               <div
                 key={index}
@@ -355,7 +392,7 @@ function Mmart() {
           </div>
 
           {/* Row 2 */}
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+          <div className="flex flex-wrap justify-center gap-8 md:gap-16 -mt-8 lg:-mt-8 lg:gap-5">
             {clientTypes.slice(3).map((client, index) => (
               <div
                 key={index}
@@ -375,6 +412,28 @@ function Mmart() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Mobile View - Carousel */}
+        <div className="md:hidden flex overflow-x-auto snap-x snap-mandatory gap-4 px-4 pb-4 scrollbar-hide">
+          {clientTypes.map((client, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-80 snap-center bg-amber-50 rounded-xl p-6 shadow-sm transform transition-transform duration-300 hover:-translate-y-1 text-center"
+            >
+              <img
+                src={client.image}
+                alt={client.title}
+                className="h-12 mb-4 mx-auto object-cover rounded"
+              />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
+                {client.title}
+              </h3>
+              <p className="text-sm text-gray-600 leading-tight">
+                {client.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 

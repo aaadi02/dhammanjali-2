@@ -388,7 +388,7 @@ const Homepage = () => {
               className="md:pt-1 pt-2 max-w-3xl text-gray-700 text-base leading-relaxed text-left"
               style={{ wordBreak: "break-word", letterSpacing: "0.01em" }}
             >
-              DHAMMANJALI FOUNDATION, At, our gallery captures the essence of
+              DHAMMANJALI GROUP, At, our gallery captures the essence of
               our journey—showcasing our commitment to quality, community
               engagement, and innovation. Each image reflects our dedication to
               excellence and the meaningful connections we've built within the
@@ -414,7 +414,7 @@ const Homepage = () => {
                 Start your own retail mart and make a meaningful difference in
                 your community by offering convenient access to a wide range of
                 essential products, including groceries, utensils, stationery,
-                kids’ items, and more. Backed by the Dhammanjali Foundation, our
+                kids’ items, and more. Backed by the Dhammanjali Group, our
                 franchise model is designed to help aspiring entrepreneurs like
                 you build a sustainable and profitable business that benefits
                 both your livelihood and your local area. We provide

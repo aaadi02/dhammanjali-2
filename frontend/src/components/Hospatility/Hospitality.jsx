@@ -115,19 +115,19 @@ const staticHospitalityData = {
   },
   gallery: {
     "Deluxe Rooms": [
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761559487/deluxeImage1_ytaua1.avif",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761559486/deluxeImage2_okn4tl.avif",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761559486/deluxeImage3_bcsdrj.avif",
     ],
     "Suite Rooms": [
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761559448/suiteRoom1_emmss7.avif",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761559448/suiteRoom3_grbhjv.avif",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761559448/suiteRoom2_oyown5.avif",
     ],
     Presidential: [
-      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1587985064135-0366536eab42?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761559465/presedential1_olxion.avif",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761559465/presedential3_a12jyd.avif",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761559465/presedential2_yybcp5.avif",
     ],
   },
 };
@@ -181,7 +181,7 @@ const ServicesTabs = ({ services }) => {
       </div>
 
       {services[active]?.image && (
-        <div className="mt-8 md:mt-12 flex flex-col md:flex-row gap-6 md:gap-8 animate-slide-up">
+        <div className="mt-8 md:mt-12 flex flex-col md:flex-row gap-6 md:gap-8 animate-slide-up lg:ml-30 lg:-mr-30">
           <div className="w-full md:w-1/2 relative overflow-hidden rounded-2xl shadow-lg group">
             <img
               src={services[active].image}
@@ -215,7 +215,7 @@ const GallerySection = ({ gallery }) => {
   if (!gallery || tabs.length === 0) return null;
 
   return (
-    <section className="py-12 md:py-16 bg-white px-4 max-w-7xl mx-auto">
+    <section className="py-12 md:py-16 bg-white px-4 max-w-full mx-auto lg:mb-2">
       <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center mb-4 md:mb-6 animate-fade-in">
         Explore Our Hotel Gallery
       </h2>
@@ -234,7 +234,7 @@ const GallerySection = ({ gallery }) => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:max-w-7xl justify-center mx-auto">
         {(gallery[activeTab] || []).map((roomImg, index) => (
           <div
             key={index}

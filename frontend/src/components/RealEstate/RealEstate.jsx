@@ -71,9 +71,9 @@ const DreamHome = () => {
       "Discover exceptional residential and commercial properties that combine luxury, comfort, and strategic location. Our curated selection ensures you find the perfect space for your lifestyle and investment goals.",
     buttonText: "Explore Properties",
     mainImageUrl:
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553177/realestate2_qgbylc.avif",
     overlayImageUrl:
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553176/realestate6_ifx8kk.avif",
   };
 
   return (
@@ -165,7 +165,7 @@ const HandpickedProjects = () => {
       plotArea: "Prayagraj, Uttar Pradesh",
       price: "₹1.2 Cr - ₹2.5 Cr",
       imageUrl:
-        "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553176/realestate7_so8fdd.avif",
       description:
         "Premium luxury villas with modern amenities, landscaped gardens, and 24/7 security. Perfect for families seeking comfort and elegance.",
       highlights: [
@@ -182,7 +182,7 @@ const HandpickedProjects = () => {
       plotArea: "City Center, Prayagraj",
       price: "₹75L - ₹1.5 Cr",
       imageUrl:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553176/realestate8_ztuat3.avif",
       description:
         "Strategic commercial spaces in the heart of the city, ideal for offices, retail stores, and business establishments.",
       highlights: [
@@ -199,7 +199,7 @@ const HandpickedProjects = () => {
       plotArea: "Civil Lines, Prayagraj",
       price: "₹45L - ₹85L",
       imageUrl:
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553176/realestate9_f6mlmt.avif",
       description:
         "Modern residential apartments with contemporary design, excellent connectivity, and all essential amenities nearby.",
       highlights: [
@@ -216,7 +216,7 @@ const HandpickedProjects = () => {
       plotArea: "Outskirts, Prayagraj",
       price: "₹25L - ₹60L",
       imageUrl:
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553176/realestate4_tdrr8b.avif",
       description:
         "Spacious farmhouse plots perfect for weekend getaways or agricultural activities, surrounded by natural beauty.",
       highlights: [
@@ -504,7 +504,7 @@ function RealEstate() {
     banner: {
       title: "PREMIUM REAL ESTATE",
       imageUrl:
-        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80",
+        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553177/realestate1_cgiui5.avif",
     },
     text: {
       title: "REAL ESTATE",
@@ -516,17 +516,17 @@ function RealEstate() {
       buying: {
         title: "Premium Homes for Sale",
         imageUrl:
-          "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+          "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553177/realestate2_qgbylc.avif",
       },
       renting: {
         title: "Luxury Rental Properties",
         imageUrl:
-          "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+          "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553176/realestate3_vphsrn.avif",
       },
       plots: {
         title: "Investment Land Plots",
         imageUrl:
-          "https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+          "https://res.cloudinary.com/dwudu5pep/image/upload/v1761553176/realestate4_tdrr8b.avif",
       },
     },
   };
@@ -561,7 +561,7 @@ function RealEstate() {
       </div>
 
       {/* Card Grid */}
-      <div className="flex flex-wrap gap-6 md:gap-8 justify-center max-w-6xl mx-auto my-10 md:my-16 px-5">
+      <div className="flex flex-wrap gap-6 md:gap-8 justify-evenly max-w-7xl mx-auto my-10 md:my-16 px-2">
         {Object.entries(staticData.cards).map(([key, card]) => (
           <div
             key={key}

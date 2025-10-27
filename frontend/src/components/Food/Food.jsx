@@ -57,7 +57,7 @@ const AnnouncementsTitle = ({
 const heroData = {
   title: "FOOD & BEVERAGES",
   imageUrl:
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+    "https://res.cloudinary.com/dwudu5pep/image/upload/v1761549676/almirall-office-cafeteria-barcelona-2_ejtznb.jpg",
 };
 
 const specialitiesData = {
