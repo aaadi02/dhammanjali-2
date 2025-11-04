@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import testimonial1 from "../../assets/images/amogh.png";
-import testimonial2 from "../../assets/images/nikhil.png";
+import testimonial2 from "../../assets/images/girl-2.jpg";
 import testimonial3 from "../../assets/images/nitesh.png";
-import testimonial4 from "../../assets/images/shravan.png";
+import testimonial4 from "../../assets/images/girl-1.jpg";
 
 // Testimonial Card Component
 const TestimonialCard = ({

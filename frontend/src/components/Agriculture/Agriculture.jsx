@@ -9,6 +9,9 @@ import {
   FaTractor,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import StoryImage1 from "../../assets/images/boy-1.jpg";
+import StoryImage2 from "../../assets/images/girl-2.jpg";
+import StoryImage3 from "../../assets/images/boy-2.jpg";
 
 // AnnouncementsTitle Component
 const AnnouncementsTitle = ({
@@ -145,8 +148,7 @@ const staticData = {
   stories: [
     {
       id: 1,
-      storyImg:
-        "https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      storyImg: StoryImage1,
       name: "Ramesh Kumar",
       role: "Organic Farmer",
       quote:
@@ -154,8 +156,7 @@ const staticData = {
     },
     {
       id: 2,
-      storyImg:
-        "https://images.unsplash.com/photo-1592059727491-0daf8b6eca4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      storyImg: StoryImage2,
       name: "Priya Sharma",
       role: "Smart Farm Owner",
       quote:
@@ -163,8 +164,7 @@ const staticData = {
     },
     {
       id: 3,
-      storyImg:
-        "https://images.unsplash.com/photo-1566618884448-5eadaab8b4b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      storyImg: StoryImage3,
       name: "Vikram Singh",
       role: "Progressive Farmer",
       quote:
