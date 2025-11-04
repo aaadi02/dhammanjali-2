@@ -5,10 +5,10 @@ import {
   FaPinterest,
   FaYoutube,
   FaMapMarkerAlt,
-  FaPhone,
+  FaPhoneAlt ,
   FaEnvelope,
 } from "react-icons/fa";
-import logo from "../../../public/images/logoimage.png";
+import logo from "../../assets/images/logoimage.png";
 
 const Footer = () => {
   return (
@@ -108,7 +108,7 @@ const Footer = () => {
                   href="/GetFrenchieForm"
                   className="hover:text-amber-600 transition-all duration-200 flex items-center group"
                 >
-                  <FaPhone className="mr-3 text-amber-500 group-hover:scale-110 transition-transform" />
+                  <FaPhoneAlt  className="mr-3 text-amber-500 group-hover:scale-110 transition-transform" />
                   Register
                 </a>
               </li>
@@ -191,7 +191,7 @@ const Footer = () => {
                 </p>
                 <p>Master Mind 4, Royal Palm, Goregaon East, Mumbai- 400065</p>
                 <div className="flex items-center justify-center mt-3 flex-wrap gap-2">
-                  <FaPhone className="text-amber-600" size={16} />
+                  <FaPhoneAlt  className="text-amber-600" size={16} />
                   <span className="font-semibold text-gray-800">Contact:</span>
                   <div className="flex flex-wrap justify-center gap-2 text-sm">
                     <a
@@ -228,7 +228,7 @@ const Footer = () => {
             <span className="text-amber-600 animate-pulse">🧡</span>
             by{" "}
             <a
-              href="https://tarstech.co.in/"
+              href="https://tars.co.in/"
               className="text-amber-600 hover:text-amber-700 font-semibold underline decoration-amber-300 hover:decoration-amber-500 transition-all duration-200"
             >
               TARS TECHNOLOGIES

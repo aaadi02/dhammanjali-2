@@ -273,7 +273,7 @@ function Medical() {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-md p-6 min-w-[340px] max-w-[400px] flex-shrink-0 mx-4 text-left hover:shadow-lg transition-shadow duration-300"
+            className="bg-white rounded-xl shadow-md p-6 min-w-[150px] lg:min-w-[340px] max-w-[280px] lg:max-w-[400px] flex-shrink-0 mx-4 text-left hover:shadow-lg transition-shadow duration-300"
           >
             <div className="text-yellow-400 text-lg mb-3">★★★★★</div>
             <p className="text-gray-800 text-base mb-5 leading-relaxed">

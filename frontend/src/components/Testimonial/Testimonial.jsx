@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import testimonial1 from "../../assets/images/amogh.png";
+import testimonial2 from "../../assets/images/nikhil.png";
+import testimonial3 from "../../assets/images/nitesh.png";
+import testimonial4 from "../../assets/images/shravan.png";
 
 // Testimonial Card Component
 const TestimonialCard = ({
@@ -44,7 +48,7 @@ function Testimonial() {
       role: "Business Owner",
       description:
         "Dhamanjali Group has been instrumental in growing my business. Their expertise and dedication are unmatched.",
-      image: "/default-avatar.jpg",
+      image: testimonial1,
     },
     {
       id: 2,
@@ -52,7 +56,7 @@ function Testimonial() {
       role: "Marketing Director",
       description:
         "The team at Dhamanjali Group provided exceptional service and delivered results beyond our expectations.",
-      image: "/default-avatar.jpg",
+      image: testimonial2,
     },
     {
       id: 3,
@@ -60,7 +64,7 @@ function Testimonial() {
       role: "CEO",
       description:
         "Working with Dhamanjali Group was a game-changer for our company. Highly recommended!",
-      image: "/default-avatar.jpg",
+      image: testimonial3,
     },
     {
       id: 4,
@@ -68,7 +72,7 @@ function Testimonial() {
       role: "Project Manager",
       description:
         "Professional, reliable, and results-driven. Dhamanjali Group exceeded all our expectations.",
-      image: "/default-avatar.jpg",
+      image: testimonial4,
     },
   ];
 

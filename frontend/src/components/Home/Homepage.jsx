@@ -31,10 +31,10 @@ const Homepage = () => {
   }, [heroImages.length]);
 
   return (
-    <div className="w-full">
+    <div className="w-full pt-20 ">
       {/* Hero Section */}
       <section
-        className="relative w-full min-h-[420px] md:min-h-[520px] lg:min-h-screen flex items-center overflow-hidden"
+        className="relative w-full h-[400px] md:h-[520px] lg:h-[650px] flex items-center overflow-hidden"
         aria-label="Homepage hero"
       >
         {/* Background image */}
@@ -51,7 +51,7 @@ const Homepage = () => {
               key={index}
               src={url}
               alt={`Hero background ${index + 1}`}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${currentImageIndex === index ? "opacity-100" : "opacity-0"
+              className={`absolute inset-0 w-full h-full lg:h-full object-cover transition-opacity duration-1000 ease-in-out ${currentImageIndex === index ? "opacity-100" : "opacity-0"
                 }`}
             />
           ))}
@@ -68,7 +68,7 @@ const Homepage = () => {
         <div className="relative z-10 max-w-6xl w-full mx-auto px-4 sm:px-6">
           <div className="pt-24 pb-16 md:pt-24 md:pb-24 lg:pt-32 lg:pb-32">
             <div className="max-w-3xl mx-auto md:ml-[-4rem] lg:ml-[-6rem] text-center md:text-left">
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-3 drop-shadow-lg">
+              <h1 className="text-[35px] md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-3 drop-shadow-lg">
                 <span className="bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">
                   Dhammanjali India
                 </span>
@@ -79,7 +79,7 @@ const Homepage = () => {
                 New Era Business Opportunities...
               </p>
 
-              <p className="text-sm sm:text-base md:text-lg text-white/90 max-w-2xl mx-auto md:mx-0 mb-6 leading-relaxed font-semibold">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 max-w-2xl mx-auto md:mx-0 mb-6 lg:leading-relaxed font-semibold">
                 Start Your Own Business With Us. Startup India, Empower India:
                 Celebrating the Spirit of Independence, Supporting the Future of
                 an Independent Workforce!
@@ -87,7 +87,7 @@ const Homepage = () => {
 
               <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4">
                 <a href="/about" className="w-full sm:w-auto">
-                  <button className="w-full sm:w-auto inline-flex justify-center items-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold rounded-full px-6 py-3 shadow-lg hover:scale-105 transition-transform duration-200">
+                  <button className=" inline-flex justify-center items-center gap-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold rounded-full px-5 lg:px-6 py-2 lg:py-3 shadow-lg hover:scale-105 transition-transform duration-200">
                     ABOUT US
                   </button>
                 </a>
@@ -172,7 +172,7 @@ const Homepage = () => {
               </div>
               <div className="mt-8">
                 <Link to="/gallery" className="inline-block">
-                  <button className="bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-200 shadow-lg hover:shadow-xl">
+                  <button className="bg-orange-400 hover:bg-orange-500 text-white font-semibold py-2 lg:py-3 px-5 lg:px-8 rounded-full transition-colors duration-200 shadow-lg hover:shadow-xl">
                     READ MORE
                   </button>
                 </Link>
