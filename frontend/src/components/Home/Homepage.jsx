@@ -1,26 +1,62 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import AnnouncementCards from "./AnnouncementCards";
+import { useEffect, useState } from "react";
+import bg1 from "../../assets/images/Image-1.jpg";
+import bg2 from "../../assets/images/Image-7.png";
+import bg3 from "../../assets/images/mainImage-2.png";
+import bg4 from "../../assets/images/mainImage-3.png";
+import bg5 from "../../assets/images/Image-5.jpg";
+import bg6 from "../../assets/images/Image-6.jpg";
+
 
 const Homepage = () => {
-  const imageUrl = "https://res.cloudinary.com/dwudu5pep/image/upload/v1761452862/WhatsApp_Image_2025-10-06_at_6.11.24_PM_puuxkm.jpg";
+  const imageUrl =
+    "https://res.cloudinary.com/dwudu5pep/image/upload/v1761452862/WhatsApp_Image_2025-10-06_at_6.11.24_PM_puuxkm.jpg";
 
   // Corporate section state
   const [activeTab, setActiveTab] = useState("SUSTAINABILITY");
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // all background images
+  const heroImages = [bg1, bg2, bg3, bg4, bg5, bg6];
+
+  // Automatically switch images every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
 
   return (
     <div className="w-full">
       {/* Hero Section */}
       <section
-        className="relative w-full min-h-[420px] md:min-h-[520px] lg:min-h-[640px] flex items-center overflow-hidden"
+        className="relative w-full min-h-[420px] md:min-h-[520px] lg:min-h-screen flex items-center overflow-hidden"
         aria-label="Homepage hero"
       >
         {/* Background image */}
-        <img
+        {/* <img
           src={imageUrl}
           alt="Hero background"
           className="absolute inset-0 w-full h-full object-cover pointer-events-none filter brightness-90"
-        />
+        /> */}
+
+        {/* ✅ Background Image Carousel */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          {heroImages.map((url, index) => (
+            <img
+              key={index}
+              src={url}
+              alt={`Hero background ${index + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${currentImageIndex === index ? "opacity-100" : "opacity-0"
+                }`}
+            />
+          ))}
+        </div>
+
 
         {/* Left-leaning overlay for better contrast on all sizes */}
         <div
@@ -66,7 +102,7 @@ const Homepage = () => {
       {/* About Section - DHAMMANJALI WE CARE */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 lg:gap-16 items-center mb-16">
             <div>
               <div className="mb-8">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
@@ -78,10 +114,8 @@ const Homepage = () => {
                   </h3>
                   <div className="hidden md:block">
                     <svg
-                      width="200"
-                      height="60"
                       viewBox="0 0 200 60"
-                      className="text-yellow-400"
+                      className="text-yellow-400 w-full h-15"
                     >
                       <path
                         d="M10 30 L170 30 M150 15 L170 30 L150 45"
@@ -114,7 +148,7 @@ const Homepage = () => {
                 <img
                   src="https://res.cloudinary.com/dwudu5pep/image/upload/v1761450416/DHAMMANJALI_GROUP_ez07yj.jpg"
                   alt="workflow"
-                  className="w-full h-80 lg:h-96 rounded-3xl object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -239,11 +273,10 @@ const Homepage = () => {
           {/* Tabs */}
           <div className="flex gap-10 sm:gap-4 md:gap-8 lg:gap-12 border-b border-[#2C2C54]/20 mb-4 text-xs sm:text-sm md:text-base lg:text-lg overflow-x-auto">
             <button
-              className={`font-semibold uppercase pb-1 border-b-2 transition-all duration-200 whitespace-nowrap ${
-                activeTab === "SUSTAINABILITY"
-                  ? "border-[#2C2C54] text-[#2C2C54]"
-                  : "border-transparent text-[#2C2C54]/80 hover:text-[#2C2C54]"
-              }`}
+              className={`font-semibold uppercase pb-1 border-b-2 transition-all duration-200 whitespace-nowrap ${activeTab === "SUSTAINABILITY"
+                ? "border-[#2C2C54] text-[#2C2C54]"
+                : "border-transparent text-[#2C2C54]/80 hover:text-[#2C2C54]"
+                }`}
               onClick={() => setActiveTab("SUSTAINABILITY")}
               aria-selected={activeTab === "SUSTAINABILITY"}
               role="tab"
@@ -251,11 +284,10 @@ const Homepage = () => {
               SUSTAINABILITY
             </button>
             <button
-              className={`font-semibold uppercase pb-1 border-b-2 transition-all duration-200 whitespace-nowrap ${
-                activeTab === "INNOVATION"
-                  ? "border-[#2C2C54] text-[#2C2C54]"
-                  : "border-transparent text-[#2C2C54]/80 hover:text-[#2C2C54]"
-              }`}
+              className={`font-semibold uppercase pb-1 border-b-2 transition-all duration-200 whitespace-nowrap ${activeTab === "INNOVATION"
+                ? "border-[#2C2C54] text-[#2C2C54]"
+                : "border-transparent text-[#2C2C54]/80 hover:text-[#2C2C54]"
+                }`}
               onClick={() => setActiveTab("INNOVATION")}
               aria-selected={activeTab === "INNOVATION"}
               role="tab"
@@ -263,11 +295,10 @@ const Homepage = () => {
               INNOVATION
             </button>
             <button
-              className={`font-semibold uppercase pb-1 border-b-2 transition-all duration-200 whitespace-nowrap ${
-                activeTab === "OUR IMPACT"
-                  ? "border-[#2C2C54] text-[#2C2C54]"
-                  : "border-transparent text-[#2C2C54]/80 hover:text-[#2C2C54]"
-              }`}
+              className={`font-semibold uppercase pb-1 border-b-2 transition-all duration-200 whitespace-nowrap ${activeTab === "OUR IMPACT"
+                ? "border-[#2C2C54] text-[#2C2C54]"
+                : "border-transparent text-[#2C2C54]/80 hover:text-[#2C2C54]"
+                }`}
               onClick={() => setActiveTab("OUR IMPACT")}
               aria-selected={activeTab === "OUR IMPACT"}
               role="tab"
@@ -279,7 +310,7 @@ const Homepage = () => {
           {/* Tab Content */}
           <div className="mb-4">
             {activeTab === "SUSTAINABILITY" && (
-              <p className="text-[#23223a] leading-relaxed text-justify text-sm sm:text-base">
+              <p className="text-[#23223a] lg:leading-relaxed text-justify text-sm sm:text-base">
                 Our growth strategy is rooted in a blend of sharp business
                 acumen and a deep sense of corporate responsibility. We believe
                 that true success is measured not just by financial gains, but
@@ -303,7 +334,7 @@ const Homepage = () => {
               </p>
             )}
             {activeTab === "INNOVATION" && (
-              <p className="text-[#23223a] leading-relaxed text-justify text-sm sm:text-base">
+              <p className="text-[#23223a] lg:leading-relaxed text-justify text-sm sm:text-base">
                 The Invocations of Dhammanjali Group embody the spiritual and
                 moral essence that underpins its mission and values. Deeply
                 rooted in the timeless teachings of Dhamma—compassion, wisdom,
@@ -326,7 +357,7 @@ const Homepage = () => {
               </p>
             )}
             {activeTab === "OUR IMPACT" && (
-              <p className="text-[#23223a] leading-relaxed text-justify text-sm sm:text-base">
+              <p className="text-[#23223a] lg:leading-relaxed text-justify text-sm sm:text-base">
                 At Dhammanjali Group, we believe in compassion-driven action
                 that transforms lives and communities. Our dedicated work across
                 rural and under-resourced areas has resulted in tangible,
@@ -388,8 +419,8 @@ const Homepage = () => {
               className="md:pt-1 pt-2 max-w-3xl text-gray-700 text-base leading-relaxed text-left"
               style={{ wordBreak: "break-word", letterSpacing: "0.01em" }}
             >
-              DHAMMANJALI GROUP, At, our gallery captures the essence of
-              our journey—showcasing our commitment to quality, community
+              DHAMMANJALI GROUP, At, our gallery captures the essence of our
+              journey—showcasing our commitment to quality, community
               engagement, and innovation. Each image reflects our dedication to
               excellence and the meaningful connections we've built within the
               communities we serve. Explore our visual story and witness the
@@ -425,7 +456,6 @@ const Homepage = () => {
                 improve the quality of life for those around you. Our mission is
                 to foster self-reliance and community development.
               </p>
-              
             </div>
             <div className="flex-1 flex items-center justify-center mt-4 md:mt-6 md:ml-6 font-montserrat px-4 md:px-0 max-w-full lg:mt-1">
               <img
@@ -443,14 +473,16 @@ const Homepage = () => {
       {/* Key Highlights AGM Section */}
       <section
         className="my-4 md:my-5 py-12 md:py-16 bg-cover bg-center bg-no-repeat text-white text-center rounded-3xl md:rounded-[150px] mx-2 sm:mx-4 md:mx-12 relative mb-15 lg:-mt-10"
-        style={{ backgroundImage: `url(https://res.cloudinary.com/dwudu5pep/image/upload/v1761451174/20240821_181618_csmxwz.jpg)` }}
+        style={{
+          backgroundImage: `url(https://res.cloudinary.com/dwudu5pep/image/upload/v1761451174/20240821_181618_csmxwz.jpg)`,
+        }}
       >
         <div className="absolute inset-0 rounded-3xl md:rounded-[150px] bg-black/30 z-0"></div>
         <div className="max-w-[1500px] mx-auto px-4 sm:px-6 relative z-10">
           <div className="px-4 sm:px-8 md:px-[30%] bg-cover bg-center bg-no-repeat relative">
             <div className="absolute inset-0 z-0"></div>
             <div className="relative z-10">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 md:mb-2 text-center text-white font-extrabold bg-blend-normal">
+              <h2 className="text-[22px] sm:text-3xl md:text-4xl lg:text-5xl mb-1 md:mb-2 text-center text-white font-extrabold bg-blend-normal">
                 Key Highlights from AGM
               </h2>
               <p className="text-white/90 mb-6 md:mb-8 text-lg sm:text-xl md:text-2xl font-bold">
@@ -486,20 +518,20 @@ const Homepage = () => {
 
       {/* Life at DHAMMANJALI Section */}
       <section className="py-16 md:py-20 bg-[#4a90a4]">
-        <div className="max-w-[1500px] mx-auto px-4 sm:px-6">
+        <div className=" mx-auto px-6 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6 md:gap-8 lg:gap-16 items-center">
             <div className="order-2 md:order-1">
               {/* Section Title */}
-              <div className="mb-4 md:mb-6">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white md:text-black mb-2">
+              <div className="mb-4 md:mb-6 text-white">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
                   Life at DHAMMANJALI
                 </h2>
-                <h3 className="text-lg sm:text-xl md:text-2xl text-black font-normal">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-normal">
                   Why work with us
                 </h3>
               </div>
 
-              <p className="text-white text-sm md:text-base text-justify mt-4 md:mt-6 mb-6 md:mb-8 leading-relaxed">
+              <p className="text-white text-sm md:text-base text-justify mt-4 md:mt-6 mb-6 md:mb-8 lg:leading-relaxed">
                 At DHAMMANJALI INDIA PRIVATE LIMITED, we are more than just a
                 growing retail leader—we are a family committed to your growth
                 and success. With a focus on innovation, customer satisfaction,
@@ -517,7 +549,7 @@ const Homepage = () => {
               <div className="flex flex-col md:flex-row gap-4 mt-6 md:mt-8 text-center md:text-left">
                 <a href="/joinform" className="w-full md:w-auto">
                   <button
-                    className="bg-orange-400 text-white px-6 py-3 rounded-full hover:bg-orange-500 transition-all shadow-md hover:shadow-lg hover:-translate-y-1 w-full md:w-auto font-semibold"
+                    className="bg-orange-400 text-white px-5 lg:px-7 py-3 rounded-full hover:bg-orange-500 transition-all shadow-md hover:shadow-lg hover:-translate-y-1  font-semibold"
                     aria-label="Learn more about working at Dhammanjali"
                   >
                     Join Our Family

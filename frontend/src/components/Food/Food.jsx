@@ -70,35 +70,35 @@ const specialitiesData = {
 const foodItems = [
   {
     id: 1,
-    heading: "Premium Quality Rice",
+    heading: "Classic Butter Croissant",
     subheading:
-      "Sourced from the finest farms, our premium rice varieties offer exceptional taste and nutritional value for your daily meals.",
+      "Light, flaky, and baked golden every morning.",
     imageUrl:
-      "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761639604/croissant_yxwzvv.jpg",
   },
   {
     id: 2,
-    heading: "Fresh Dairy Products",
+    heading: "Masala chai",
     subheading:
-      "Our dairy range includes fresh milk, yogurt, and cheese products that meet the highest standards of quality and freshness.",
+      "Authentic, soul-warming chai brewed with fresh spices and love. From classic masala to unique blends — every sip tells a story.",
     imageUrl:
-      "https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761652699/masalaChai_ox1xyj.jpg",
   },
   {
     id: 3,
-    heading: "Organic Vegetables",
+    heading: "Burger",
     subheading:
-      "Farm-fresh organic vegetables grown without harmful pesticides, ensuring healthy and nutritious meals for your family.",
+      "Serving juicy, handcrafted burgers made with fresh ingredients and bold flavors. Perfectly grilled, stacked with your favorite toppings, and always delicious.",
     imageUrl:
-      "https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761653204/k2ffns5rmyzpr4ghhjn4_cke2nj.jpg",
   },
   {
     id: 4,
-    heading: "Artisanal Bakery Items",
+    heading: "Cheese Grilled Sandwich",
     subheading:
-      "Freshly baked bread, pastries, and confectioneries made with traditional recipes and the finest ingredients.",
+      "Crispy golden bread stuffed with gooey melted cheese and veggies. A perfect quick bite for any time of the day.",
     imageUrl:
-      "https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      "https://res.cloudinary.com/dwudu5pep/image/upload/v1761653300/s5lnaiyydeplpitwkzti_ft5mnc.jpg",
   },
 ];
 

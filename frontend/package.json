@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+ "scripts": {
+  "dev": "vite --host",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "host": "vite --host"
+},
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
     "framer-motion": "^12.23.24",

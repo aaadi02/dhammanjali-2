@@ -240,7 +240,7 @@ const Agriculture = () => {
               className="bg-white rounded-3xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-green-100"
             >
               <div className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg">
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-18 lg:h-17 border-amber-300 border-2 rounded-2xl flex items-center justify-center mb-4 md:mb-6">
                   {amenity.icon}
                 </div>
                 <h3 className="text-lg md:text-xl text-center font-bold text-gray-800 mb-3 md:mb-4">

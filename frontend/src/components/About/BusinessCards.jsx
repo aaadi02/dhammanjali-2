@@ -4,7 +4,7 @@ const BusinessCards = () => {
   const businessData = [
     {
       id: 1,
-      title: "Mart",
+      title: "M-Mart",
       image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761453246/m-mart_lfbgh6.jpg",
     },
     {
@@ -19,7 +19,7 @@ const BusinessCards = () => {
     },
     {
       id: 4,
-      title: "Cafe",
+      title: "Cafe Villa",
       image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761453542/320x320_square_f7e279db7f23326de892cdd1e370bbcf_jnuqrk.jpg",
     },
     {

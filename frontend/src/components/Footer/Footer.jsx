@@ -23,7 +23,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Dhammanjali Group Logo"
-                className="h-[6rem] w-[8rem] mb-3 drop-shadow-md max-[400px]:max-w-[120px] max-[400px]:h-auto ml-27 lg:max-w-[6 00px] lg:ml-0"
+                className="h-[6rem] w-[13rem] lg:ml-0 ml-15 lg:w-[20rem]  mb-3"
               />
             </div>
             <p className="text-gray-600 text-sm text-center max-w-xs leading-relaxed ">
@@ -34,11 +34,11 @@ const Footer = () => {
 
           {/* Quick Link Section */}
           <div className="text-left flex-1 min-h-[200px] flex flex-col md:border-l-2 md:border-gray-100 md:pl-10 md:relative md:before:content-[''] md:before:absolute md:before:left-[-1px] md:before:top-0 md:before:h-[60px] md:before:w-[2px] md:before:bg-gradient-to-b md:before:from-amber-500 md:before:to-amber-600 max-[600px]:py-3 max-[600px]:border-none max-[600px]:text-left">
-            <h3 className="text-xl font-bold text-gray-800 mb-6 font-montserrat relative max-[400px]:text-base">
+            <h3 className="text-xl font-bold text-gray-800 mb-4 lg:mb-6 font-montserrat relative max-[400px]:text-base">
               Quick Links
               <div className="absolute bottom-0 left-0 w-12 h-0.5 bg-amber-500 rounded-full"></div>
             </h3>
-            <ul className="text-gray-600 space-y-3">
+            <ul className="text-gray-600 space-y-2.5 md:space-y-3">
               <li>
                 <a
                   href="/"
@@ -88,12 +88,12 @@ const Footer = () => {
           </div>
 
           {/* Get in Touch Section */}
-          <div className="text-left flex-1 min-h-[200px] flex flex-col md:border-l-2 md:border-gray-100 md:pl-10 md:relative md:before:content-[''] md:before:absolute md:before:left-[-1px] md:before:top-0 md:before:h-[60px] md:before:w-[2px] md:before:bg-gradient-to-b md:before:from-amber-500 md:before:to-amber-600 max-[600px]:py-3 max-[600px]:border-none max-[600px]:text-left">
-            <h3 className="text-xl font-bold text-gray-800 mb-6 font-montserrat relative max-[400px]:text-base">
+          <div className="text-left flex-1 min-h-[170px] lg:min-h-[200px] flex flex-col md:border-l-2 md:border-gray-100 md:pl-10 md:relative md:before:content-[''] md:before:absolute md:before:left-[-1px] md:before:top-0 md:before:h-[60px] md:before:w-[2px] md:before:bg-gradient-to-b md:before:from-amber-500 md:before:to-amber-600 max-[600px]:py-3 max-[600px]:border-none max-[600px]:text-left">
+            <h3 className="text-xl font-bold text-gray-800 mb-4 lg:mb-6 font-montserrat relative max-[400px]:text-base">
               Get in Touch
               <div className="absolute bottom-0 left-0 w-12 h-0.5 bg-amber-500 rounded-full"></div>
             </h3>
-            <ul className="text-gray-600 space-y-4">
+            <ul className="text-gray-600 space-y-3 lg:space-y-4 ">
               <li>
                 <a
                   href="/joinform"
@@ -193,7 +193,7 @@ const Footer = () => {
                 <div className="flex items-center justify-center mt-3 flex-wrap gap-2">
                   <FaPhone className="text-amber-600" size={16} />
                   <span className="font-semibold text-gray-800">Contact:</span>
-                  <div className="flex flex-wrap gap-2 text-sm">
+                  <div className="flex flex-wrap justify-center gap-2 text-sm">
                     <a
                       href="tel:+919721489878"
                       className="hover:text-amber-600 transition-colors"
@@ -207,7 +207,7 @@ const Footer = () => {
                     >
                       +91 9769052291
                     </a>
-                    <span className="text-gray-400">|</span>
+                    <span className="text-gray-400 hidden md:block ">|</span>
                     <a
                       href="tel:+919833489878"
                       className="hover:text-amber-600 transition-colors"
