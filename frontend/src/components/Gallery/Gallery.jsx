@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 function Gallery() {
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:5000/api/gallery")
+      .then((res) => setImages(res.data))
+      .catch((err) => console.error(err));
+  }, []);
+
   return (
     <div className="w-full min-h-screen bg-gray-50">
       {/* Gallery Header Section */}
@@ -58,6 +67,18 @@ function Gallery() {
         <div className="text-center text-gray-500">
           Gallery content coming soon...
         </div>
+      </section>
+
+      <section className="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {images.map((img) => (
+          <div key={img._id} className="overflow-hidden rounded-lg shadow-md">
+            <img
+              src={img.imageUrl}
+              alt="Gallery"
+              className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        ))}
       </section>
     </div>
   );
