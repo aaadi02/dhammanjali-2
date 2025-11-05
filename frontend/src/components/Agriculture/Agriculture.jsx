@@ -268,11 +268,11 @@ const Agriculture = () => {
             <FaTractor className="text-green-600" />
             Smart Technology
           </div>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-4 md:mb-6">
+          <h2 className="text-[22px] md:text-3xl lg:text-4xl xl:text-5xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent pb-2 md:pb-6">
             Smart Farming Features
           </h2>
           <div className="w-24 md:w-32 h-1 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mx-auto mb-4 md:mb-6" />
-          <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+          <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto lg:leading-relaxed px-4">
             Empowering farmers with cutting-edge technology and sustainable
             solutions for a greener tomorrow.
           </p>

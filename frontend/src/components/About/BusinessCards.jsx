@@ -1,4 +1,5 @@
 import React from "react";
+import foundation from "../../assets/images/homeImg4.png";
 
 const BusinessCards = () => {
   const businessData = [
@@ -25,7 +26,7 @@ const BusinessCards = () => {
     {
       id: 5,
       title: "Dhammanjali Foundation",
-      image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761453776/s5ylgoz5015nrhtmbnc1_cmpiig.jpg",
+      image: foundation,
     },
     {
       id: 6,

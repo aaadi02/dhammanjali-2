@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import BusinessCards from "./BusinessCards";
+import Excellence from "../../assets/images/Excellence-2.png";
 
 // Framer Motion Variants
 const cardVariants = {
@@ -36,7 +37,7 @@ function About() {
     "We aim to conduct our businesses ethically and in a manner that is respectful to all individuals, communities, and the environment. Our commitment goes beyond compliance—we believe in doing the right thing, even when no one is watching. We achieve this by aligning our goals with our six core values, which serve as the group of every decision, interaction, and initiative we undertake.";
 
   const values = [
-    { title: "Excellence", image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761655403/excellence_bcsxnn.jpg" },
+    { title: "Excellence", image: Excellence },
     { title: "Customer Value", image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761454750/ns27nvpzvpbzrined1in_n6cst4.jpg" },
     { title: "Owner Mindset", image: "https://res.cloudinary.com/dwudu5pep/image/upload/v1761454749/dlcc3ac6sdr83rpopctg_lt1mto.jpg" },
   ];
@@ -380,12 +381,7 @@ function About() {
       <section className="bg-[#4a90a4] pt-16 pb-16 px-4 text-white">
         <div className="max-w-6xl mx-auto">
           <AnnouncementsTitle
-            title="Our Values &"
-            subtitle={
-              <span className="block font-montserrat font-light text-[rgb(94,89,89)] tracking-[0.17em] text-[clamp(1rem,4vw,2.25rem)] md:text-[30px] md:font-[300]">
-                Behaviour
-              </span>
-            }
+            title="Our Values"
             description={description}
             arrowWidth={200}
             arrowHeight={12}

@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import AnnouncementCards from "./AnnouncementCards";
 import { useEffect, useState } from "react";
-import bg1 from "../../assets/images/Image-1.jpg";
+import bg1 from "../../assets/images/Image-6.jpg";
 import bg2 from "../../assets/images/Image-7.png";
 import bg3 from "../../assets/images/mainImage-2.png";
 import bg4 from "../../assets/images/mainImage-3.png";
 import bg5 from "../../assets/images/Image-5.jpg";
-import bg6 from "../../assets/images/Image-6.jpg";
 
 
 const Homepage = () => {
@@ -19,7 +18,7 @@ const Homepage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // all background images
-  const heroImages = [bg1, bg2, bg3, bg4, bg5, bg6];
+  const heroImages = [bg1, bg2, bg3, bg4, bg5];
 
   // Automatically switch images every 4 seconds
   useEffect(() => {
@@ -31,10 +30,10 @@ const Homepage = () => {
   }, [heroImages.length]);
 
   return (
-    <div className="w-full pt-20 ">
+    <div className="w-full pt-20 md:pt-10 ">
       {/* Hero Section */}
       <section
-        className="relative w-full h-[400px] md:h-[520px] lg:h-[650px] flex items-center overflow-hidden"
+        className="relative w-full min-h-[400px] md:min-h-[520px] lg:min-h-screen flex items-center overflow-hidden"
         aria-label="Homepage hero"
       >
         {/* Background image */}
