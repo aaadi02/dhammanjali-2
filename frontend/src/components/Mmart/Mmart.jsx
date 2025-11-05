@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import {
   FaHandshake,
   FaShippingFast,
@@ -142,48 +143,33 @@ const AnnouncementsTitle = ({
   </div>
 );
 
-// MartDynamic Component (simplified version)
+// MartDynamic Component (dynamic version)
 const MartDynamic = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Sample mart items (replace with your Firebase data)
-  const sampleItems = [
-    {
-      id: 1,
-      title: "Kids clothing",
-      description:
-        "Colorful, comfy, and stylish! Discover adorable outfits for every age — from playful everyday wear to special occasion looks.",
-      imageUrl:
-        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761545243/bzzpyproyrqkokqhxsna_uav3kr.jpg",
-    },
-    {
-      id: 2,
-      title: "Grocery & Staples",
-      description:
-        "Your daily essentials, all in one place. From fresh grains and pulses to oils, flours, and spices — quality and freshness you can count on.",
-      imageUrl:
-        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761545244/q5uvldsejuo8hk1vbvaf_z8qxjx.png",
-    },
-    {
-      id: 3,
-      title: "Fruits & Vegetables",
-      description:
-        "Farm-fresh fruits and crisp vegetables, handpicked daily for peak freshness and taste.",
-      imageUrl:
-        "https://res.cloudinary.com/dwudu5pep/image/upload/v1761545244/eljuawvomd94mhy8huuo_rkogbr.png",
-    },
-  ];
-
   useEffect(() => {
-    // Simulate loading
-    setTimeout(() => {
-      setItems(sampleItems);
-      setLoading(false);
-    }, 1000);
+    // Fetch mart items from backend
+    fetch("http://localhost:5000/api/mart")
+      .then((res) => res.json())
+      .then((data) => {
+        setItems(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error fetching mart items:", err);
+        setLoading(false);
+      });
   }, []);
 
   if (loading) return <div className="p-8 text-center">Loading...</div>;
+
+  if (items.length === 0)
+    return (
+      <div className="p-8 text-center text-gray-600">
+        No mart items found. Please check back later.
+      </div>
+    );
 
   return (
     <div className="pt-0 pb-8 px-4 max-w-6xl mx-auto">
@@ -191,8 +177,8 @@ const MartDynamic = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {items.map((item) => (
           <div
-            key={item.id}
-            className="border rounded-lg p-4 flex flex-col items-center bg-white shadow"
+            key={item._id}
+            className="border rounded-lg p-4 flex flex-col items-center bg-white shadow hover:shadow-lg transition duration-300"
           >
             {item.imageUrl && (
               <img
@@ -201,7 +187,9 @@ const MartDynamic = () => {
                 className="h-32 w-32 object-cover mb-4 rounded"
               />
             )}
-            <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+            <h3 className="font-semibold text-lg mb-2 text-center">
+              {item.title}
+            </h3>
             <p className="text-gray-700 text-center">{item.description}</p>
           </div>
         ))}
@@ -209,6 +197,7 @@ const MartDynamic = () => {
     </div>
   );
 };
+
 
 // USPs Component
 const USPs = () => {

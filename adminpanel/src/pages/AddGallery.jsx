@@ -70,7 +70,7 @@ function AddGallery() {
             Upload
           </button>
         </form>{/* Uploaded Images Section */}
-        <h3 className="text-[#0f2769] text-[20px] font-semibold mb-4">
+        <h3 className="text-[#0f2769] text-[16px] font-semibold ml-3 mt-6 mb-2">
           Uploaded Images
         </h3>
 
