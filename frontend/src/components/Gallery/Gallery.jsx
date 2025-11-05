@@ -63,23 +63,27 @@ function Gallery() {
 
       {/* Gallery Content Section - Add your gallery content here */}
       <section className="px-4 md:px-8 pb-16 max-w-7xl mx-auto">
-        {/* Gallery grid or content will go here */}
-        <div className="text-center text-gray-500">
-          Gallery content coming soon...
-        </div>
+        {images.length === 0 ? (
+          // ✅ Show this when there are no images
+          <div className="text-center text-gray-500 text-lg font-medium py-16">
+            Gallery content coming soon...
+          </div>
+        ) : (
+          // ✅ Show images when available
+          <div className="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {images.map((img) => (
+              <div key={img._id} className="overflow-hidden rounded-lg shadow-md">
+                <img
+                  src={img.imageUrl}
+                  alt="Gallery"
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </section>
 
-      <section className="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {images.map((img) => (
-          <div key={img._id} className="overflow-hidden rounded-lg shadow-md">
-            <img
-              src={img.imageUrl}
-              alt="Gallery"
-              className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-        ))}
-      </section>
     </div>
   );
 }
