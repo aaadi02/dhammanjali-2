@@ -45,3 +45,24 @@ export const getGalleryImages = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+// DELETE image
+export const deleteGalleryImage = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    // Find the image in MongoDB
+    const image = await Gallery.findById(id);
+    if (!image) return res.status(404).json({ message: "Image not found" });
+
+    // Delete from Cloudinary using public_id
+    await cloudinary.uploader.destroy(image.public_id);
+
+    // Delete from MongoDB
+    await Gallery.findByIdAndDelete(id);
+
+    res.status(200).json({ message: "Image deleted successfully" });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};

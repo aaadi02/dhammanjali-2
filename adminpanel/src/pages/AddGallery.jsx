@@ -41,6 +41,19 @@ function AddGallery() {
     }
   };
 
+  // ✅ Delete image
+  const handleDelete = async (id) => {
+    if (!window.confirm("Are you sure you want to delete this image?")) return;
+
+    try {
+      await axios.delete(`http://localhost:5000/api/gallery/${id}`);
+      alert("Image deleted successfully");
+      fetchGallery(); // refresh
+    } catch (error) {
+      console.error("Error deleting image:", error);
+    }
+  };
+
   return (
     <>
       <Sidebar />
@@ -75,6 +88,12 @@ function AddGallery() {
                   alt="Gallery"
                   className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
                 />
+                 <button
+                  onClick={() => handleDelete(img._id)}
+                  className="bg-red-600 text-white text-[12px] m-2 p-1 rounded-md hover:bg-red-700 hover:scale-105 transition"
+                >
+                  Delete
+                </button>
               </div>
             ))}
           </div>
